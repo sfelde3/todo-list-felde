@@ -3,7 +3,7 @@
 
    //log-funktion
 
-   function write_log($action, $data){
+   /* function write_log($action, $data){
       $log = '';
       if(file_exists('log.txt')){
          $log = fopen('log.txt', 'a');
@@ -16,7 +16,7 @@
       $timestamp = date('Y-m-d H:i:s');
       fwrite($log, "$timestamp - $action: " . json_encode($data) . "\n");
       fclose($log);
-   }
+   } 
    $file = 'todo.json';
    if(file_exists($file)){
     $json_data = file_get_contents($file);
@@ -35,5 +35,21 @@
       exit;
    }
    echo json_encode($todos);
+    */
 
+    switch($_SERVER["REQUEST_METHOD"]){
+        case "GET":
+            //get TO-DO (READ)
+            break;
+        case "POST":
+            //Add TODO(CREATE)
+            break;
+        case "PUT":
+            //Chanege TODO (UPDATE)
+            break;
+        case "DELETE":
+            //Remove TODO (DELETE)
+            break;
+
+    }
 ?>
