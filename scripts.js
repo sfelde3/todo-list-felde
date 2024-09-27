@@ -1,4 +1,13 @@
-function loadTodos(){
+
+
+
+document.addEventListener("DOMContentLoaded", function(){
+
+//define the URL  to our CRUD
+    
+
+})
+/* function loadTodos(){
     fetch('http://sf.mshome.net/todo-list-felde/todo.php')
     .then(response => response.json())
     .then(todos => {
@@ -34,3 +43,4 @@ function loadTodos(){
     });
 
 window.onload = (event) => loadTodos();
+ */
