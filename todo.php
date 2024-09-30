@@ -11,7 +11,10 @@
             $todos = [
                 ["id"=> "uniqID", "title" => "First TODO"]
             ];
-            echo json_encode($todos);
+            if($_SERVER['REQUEST_METHOD'] === 'GET'){
+                echo json_encode($todos);
+            }
+            
             write_log("READ", null);
             break;
         case "POST":
