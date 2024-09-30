@@ -4,11 +4,17 @@
 document.addEventListener("DOMContentLoaded", function(){
     //define the URL  to our CRUD
     const apiURL = "todo.php";
-
-
-
-
-})
+    fetch(apiURL)
+    .then(response => response.json())
+    .then(data => {
+        const todoList = document.getElementById('todoList');
+        data .forEach(item => {
+            const li = document.createElement('li');
+            li.textContent = item.title;
+            todoList.appendChild(li);
+        });
+    });
+});
 /* function loadTodos(){
     fetch('http://sf.mshome.net/todo-list-felde/todo.php')
     .then(response => response.json())
