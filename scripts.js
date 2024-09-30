@@ -1,9 +1,9 @@
 
 
-
+const apiURL = "todo.php";
 document.addEventListener("DOMContentLoaded", function(){
     //define the URL  to our CRUD
-    const apiURL = "todo.php";
+    
     fetch(apiURL)
     .then(response => response.json())
     .then(data => {
@@ -27,7 +27,7 @@ document.getElementById('todoForm').addEventListener('submit', function(e) {
     })
     .then(response => response.json)
     .then(data => {
-        const todoList = document.getElementById('todoListr');
+        const todoList = document.getElementById('todoList');
         const li = document.createElement('li');
         li.textContent = data.title;
         todoList.appendChild(li);

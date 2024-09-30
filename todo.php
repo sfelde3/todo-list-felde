@@ -2,7 +2,10 @@
    header('Content-Type: application/json');
 
    //log-funktion
-
+    $todo_items = [
+        ["id" => "someUniqueID", "title" => "Erste Aufgabe"]
+    ];
+    $todo_file = 'todo.json';
 
    
     switch($_SERVER["REQUEST_METHOD"]){
@@ -14,11 +17,15 @@
             if($_SERVER['REQUEST_METHOD'] === 'GET'){
                 echo json_encode($todos);
             }
-            
             write_log("READ", null);
             break;
         case "POST":
             //Add TODO(CREATE)
+            $data = json_decode(file_get_contents('php//input'), true);
+            $new_todo = ["id" => uniqid(), "title" => $data['title']];
+            $todo_items[] = $new_todo;
+            file_put_contents($todo_file, json_encode($todo_items));
+            echo json_encode($new_todo);
             write_log("CREATE", null);
             break;
         case "PUT":
