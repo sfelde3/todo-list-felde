@@ -2,9 +2,11 @@
 
 
 document.addEventListener("DOMContentLoaded", function(){
+    //define the URL  to our CRUD
+    const apiURL = "todo.php";
 
-//define the URL  to our CRUD
-    
+
+
 
 })
 /* function loadTodos(){
