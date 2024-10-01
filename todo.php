@@ -10,15 +10,11 @@
     switch($_SERVER["REQUEST_METHOD"]){
         case "GET":
             //get TO-DO (READ)
-            $todos = [
-                ["id"=> "uniqID", "title" => "First TODO"]
-            ];
-            if($_SERVER['REQUEST_METHOD'] === 'GET'){
-                echo json_encode($todos);
-            }
-            write_log("READ", null);
-            break;
-            case "POST":
+                $return = json_encode($todo_items);
+                echo $return;
+                write_log("READ", $return);
+                break;
+        case "POST":
                 // Get data from the input stream.
                 $data = json_decode(file_get_contents('php://input'), true);
                 // Create new todo item.
@@ -37,9 +33,20 @@
             break;
         case "DELETE":
             //Remove TODO (DELETE)
-            write_log("DELETE", null);
-            break;
-    }
+            $data = json_decode(file_get_contents('php://input'), true);
+        // Filter Todo to delete from the list.
+        $todo_items = array_filter($todo_items, function($todo) use ($data) {
+            return $todo['id'] !== $data['id'];
+            
+        });
+        //var_dump($todo_items);
+            	// Write the Todos back to JSON file.
+            file_put_contents('todos.json', json_encode($todo_items));
+            // Tell the client the success of the operation.
+            echo json_encode(['status' => 'success']);
+            write_log("DELETE", $data);
+           break;
+        }
     function write_log($action, $data){
         $log = '';
         if(file_exists('log.txt')){

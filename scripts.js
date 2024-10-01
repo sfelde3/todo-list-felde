@@ -8,13 +8,33 @@ document.addEventListener("DOMContentLoaded", function(){
     .then(response => response.json())
     .then(data => {
         const todoList = document.getElementById('todoList');
-        data .forEach(item => {
+        data.forEach(item => {
             const li = document.createElement('li');
             li.textContent = item.title;
-            todoList.appendChild(li);
+            const deleteButton = document.createElement('button');
+deleteButton.textContent = "Löschen";
+deleteButton.addEventListener('click', function(evt){
+    console.log(evt);
+    console.log(`Delete ${item.title} from List`);
+    fetch(apiURL, {
+        method: 'DELETE',
+        headers: {
+            'Content-Type' : 'application/json'
+        },
+        body : JSON.stringify({id : item.id})
+    })
+    .then(response => response.json())
+    .then(() => {
+        li.remove();
+    });
+});
+li.appendChild(deleteButton);
+todoList.appendChild(li);
         });
     });
 });
+
+
 document.getElementById('todoForm').addEventListener('submit', function(e) { 
     e.preventDefault();
     const todoInput = document.getElementById('todoInput').value;
@@ -35,40 +55,3 @@ document.getElementById('todoForm').addEventListener('submit', function(e) {
     })
     
 })
-/* function loadTodos(){
-    fetch('http://sf.mshome.net/todo-list-felde/todo.php')
-    .then(response => response.json())
-    .then(todos => {
-        const todoList = 
-        document.getElementById('todoList');
-        todoList.innerHTML = '' ;
-        todos.forEach(todo => {
-            const li = 
-                document.createElement('li');
-                li.textContent = todo;
-                todoList.appendChild(li);
-        });
-    })
-    .catch(error => console.error('Fehler:', error));
-}
-
-    document.getElementById('todoForm').addEventListener('submit' , (evt) =>  {
-        evt.preventDefault();
-        const todoInput = document.getElementById('todoInput').value;
-        fetch('http://sf.mshome.net/todo-list-felde/todo.php', {
-            method: 'POST', 
-            headers: {
-                'Content-Type': 'application/json',
-            }, 
-            body: JSON.stringify({todo: todoInput}),
-        })
-        .then(response => response.json())
-        .then((data) => {console.log(data);
-            loadTodos();
-            document.getElementById('todoInput').value = '';
-        })
-        .catch(error => console.error('Fehler:', error));
-    });
-
-window.onload = (event) => loadTodos();
- */
