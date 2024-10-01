@@ -25,7 +25,7 @@ document.getElementById('todoForm').addEventListener('submit', function(e) {
         },
         body: JSON.stringify({title : todoInput})
     })
-    .then(response => response.json)
+    .then(response => response.json())
     .then(data => {
         const todoList = document.getElementById('todoList');
         const li = document.createElement('li');
