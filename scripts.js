@@ -31,6 +31,7 @@ document.getElementById('todoForm').addEventListener('submit', function(e) {
         const li = document.createElement('li');
         li.textContent = data.title;
         todoList.appendChild(li);
+        document.getElementById('todoInput').value = "";
     })
     
 })
