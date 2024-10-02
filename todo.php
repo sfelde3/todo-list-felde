@@ -39,9 +39,8 @@
             return $todo['id'] !== $data['id'];
             
         });
-        //var_dump($todo_items);
             	// Write the Todos back to JSON file.
-            file_put_contents('todos.json', json_encode($todo_items));
+            file_put_contents('todo.json', json_encode($todo_items));
             // Tell the client the success of the operation.
             echo json_encode(['status' => 'success']);
             write_log("DELETE", $data);
