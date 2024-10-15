@@ -102,3 +102,68 @@
 2024-10-01 14:57:57 - DELETE: {"id":"66fbf00cc9dbb"}
 2024-10-01 14:57:59 - CREATE: {"id":"66fbf1d71f2e4","title":"bnm"}
 2024-10-01 14:58:26 - READ: "{\"1\":{\"id\":\"66fbf0a9ca077\",\"title\":\"sdf\"},\"2\":{\"id\":\"66fbf0ab4ee10\",\"title\":\"sdf\"},\"3\":{\"id\":\"66fbf0adaeb63\",\"title\":\"vcbvcv\"},\"4\":{\"id\":\"66fbf1d71f2e4\",\"title\":\"bnm\"}}"
+2024-10-14 08:53:57 - READ: "null"
+2024-10-14 09:38:43 - READ: "null"
+2024-10-14 09:39:07 - READ: "null"
+2024-10-14 09:50:42 - READ: "null"
+2024-10-14 09:52:14 - READ: "null"
+2024-10-14 17:07:35 - READ: [{"id":1,"text":"First to-do","completed":0},{"id":2,"text":"Second to-do","completed":0},{"id":3,"text":"Test-To-Do","completed":0}]
+2024-10-14 17:10:30 - READ: [{"id":1,"text":"First to-do","completed":0},{"id":2,"text":"Second to-do","completed":0},{"id":3,"text":"Test-To-Do","completed":0}]
+2024-10-14 17:10:35 - READ: [{"id":1,"text":"First to-do","completed":0},{"id":2,"text":"Second to-do","completed":0},{"id":3,"text":"Test-To-Do","completed":0}]
+2024-10-14 17:10:36 - READ: [{"id":1,"text":"First to-do","completed":0},{"id":2,"text":"Second to-do","completed":0},{"id":3,"text":"Test-To-Do","completed":0}]
+2024-10-14 17:10:59 - READ: [{"id":1,"text":"First to-do","completed":0},{"id":2,"text":"Second to-do","completed":0},{"id":3,"text":"Test-To-Do","completed":0}]
+2024-10-14 17:11:01 - READ: [{"id":1,"text":"First to-do","completed":0},{"id":2,"text":"Second to-do","completed":0},{"id":3,"text":"Test-To-Do","completed":0}]
+2024-10-14 17:11:02 - READ: [{"id":1,"text":"First to-do","completed":0},{"id":2,"text":"Second to-do","completed":0},{"id":3,"text":"Test-To-Do","completed":0}]
+2024-10-14 17:15:29 - READ: [{"id":1,"text":"First to-do","completed":0},{"id":2,"text":"Second to-do","completed":0},{"id":3,"text":"Test-To-Do","completed":0}]
+2024-10-14 17:15:33 - READ: [{"id":1,"text":"First to-do","completed":0},{"id":2,"text":"Second to-do","completed":0},{"id":3,"text":"Test-To-Do","completed":0}]
+2024-10-14 17:15:34 - READ: [{"id":1,"text":"First to-do","completed":0},{"id":2,"text":"Second to-do","completed":0},{"id":3,"text":"Test-To-Do","completed":0}]
+2024-10-14 17:16:42 - READ: [{"id":1,"text":"First to-do","completed":0},{"id":2,"text":"Second to-do","completed":0},{"id":3,"text":"Test-To-Do","completed":0}]
+2024-10-14 17:16:44 - READ: [{"id":1,"text":"First to-do","completed":0},{"id":2,"text":"Second to-do","completed":0},{"id":3,"text":"Test-To-Do","completed":0}]
+2024-10-14 17:16:45 - READ: [{"id":1,"text":"First to-do","completed":0},{"id":2,"text":"Second to-do","completed":0},{"id":3,"text":"Test-To-Do","completed":0}]
+2024-10-14 17:16:46 - READ: [{"id":1,"text":"First to-do","completed":0},{"id":2,"text":"Second to-do","completed":0},{"id":3,"text":"Test-To-Do","completed":0}]
+2024-10-14 17:16:47 - READ: [{"id":1,"text":"First to-do","completed":0},{"id":2,"text":"Second to-do","completed":0},{"id":3,"text":"Test-To-Do","completed":0}]
+2024-10-14 17:16:53 - READ: [{"id":1,"text":"First to-do","completed":0},{"id":2,"text":"Second to-do","completed":0},{"id":3,"text":"Test-To-Do","completed":0}]
+2024-10-14 17:16:55 - READ: [{"id":1,"text":"First to-do","completed":0},{"id":2,"text":"Second to-do","completed":0},{"id":3,"text":"Test-To-Do","completed":0}]
+2024-10-14 17:17:23 - READ: [{"id":1,"text":"First to-do","completed":0},{"id":2,"text":"Second to-do","completed":0},{"id":3,"text":"Test-To-Do","completed":0}]
+2024-10-14 17:17:27 - READ: [{"id":1,"text":"First to-do","completed":0},{"id":2,"text":"Second to-do","completed":0},{"id":3,"text":"Test-To-Do","completed":0}]
+2024-10-14 17:34:34 - READ: [{"id":1,"text":"First to-do","completed":0},{"id":2,"text":"Second to-do","completed":0},{"id":3,"text":"Test-To-Do","completed":0}]
+2024-10-14 17:34:36 - READ: [{"id":1,"text":"First to-do","completed":0},{"id":2,"text":"Second to-do","completed":0},{"id":3,"text":"Test-To-Do","completed":0}]
+2024-10-14 17:34:37 - READ: [{"id":1,"text":"First to-do","completed":0},{"id":2,"text":"Second to-do","completed":0},{"id":3,"text":"Test-To-Do","completed":0}]
+2024-10-14 17:34:39 - READ: [{"id":1,"text":"First to-do","completed":0},{"id":2,"text":"Second to-do","completed":0},{"id":3,"text":"Test-To-Do","completed":0}]
+2024-10-14 17:34:55 - READ: [{"id":1,"text":"First to-do","completed":0},{"id":2,"text":"Second to-do","completed":0},{"id":3,"text":"Test-To-Do","completed":0}]
+2024-10-14 17:35:11 - READ: [{"id":1,"text":"First to-do","completed":0},{"id":2,"text":"Second to-do","completed":0},{"id":3,"text":"Test-To-Do","completed":0}]
+2024-10-14 17:35:13 - READ: [{"id":1,"text":"First to-do","completed":0},{"id":2,"text":"Second to-do","completed":0},{"id":3,"text":"Test-To-Do","completed":0}]
+2024-10-14 17:35:16 - READ: [{"id":1,"text":"First to-do","completed":0},{"id":2,"text":"Second to-do","completed":0},{"id":3,"text":"Test-To-Do","completed":0}]
+2024-10-14 17:35:18 - READ: [{"id":1,"text":"First to-do","completed":0},{"id":2,"text":"Second to-do","completed":0},{"id":3,"text":"Test-To-Do","completed":0}]
+2024-10-14 17:36:28 - READ: [{"id":1,"text":"First to-do","completed":0},{"id":2,"text":"Second to-do","completed":0},{"id":3,"text":"Test-To-Do","completed":0}]
+2024-10-14 17:36:30 - READ: [{"id":1,"text":"First to-do","completed":0},{"id":2,"text":"Second to-do","completed":0},{"id":3,"text":"Test-To-Do","completed":0}]
+2024-10-14 17:36:50 - READ: [{"id":1,"text":"First to-do","completed":0},{"id":2,"text":"Second to-do","completed":0},{"id":3,"text":"Test-To-Do","completed":0}]
+2024-10-14 17:36:52 - READ: [{"id":1,"text":"First to-do","completed":0},{"id":2,"text":"Second to-do","completed":0},{"id":3,"text":"Test-To-Do","completed":0}]
+2024-10-14 17:46:04 - READ: [{"id":1,"text":"First to-do","completed":0},{"id":2,"text":"Second to-do","completed":0},{"id":3,"text":"Test-To-Do","completed":0}]
+2024-10-14 17:46:06 - READ: [{"id":1,"text":"First to-do","completed":0},{"id":2,"text":"Second to-do","completed":0},{"id":3,"text":"Test-To-Do","completed":0}]
+2024-10-14 17:56:09 - READ: [{"id":1,"text":"First to-do","completed":0},{"id":2,"text":"Second to-do","completed":0},{"id":3,"text":"Test-To-Do","completed":0}]
+2024-10-14 17:56:12 - READ: [{"id":1,"text":"First to-do","completed":0},{"id":2,"text":"Second to-do","completed":0},{"id":3,"text":"Test-To-Do","completed":0}]
+2024-10-14 17:56:14 - UPDATE: {"id":2}
+2024-10-14 17:56:14 - READ: [{"id":1,"text":"First to-do","completed":0},{"id":2,"text":"Second to-do","completed":1},{"id":3,"text":"Test-To-Do","completed":0}]
+2024-10-14 17:56:16 - DELETE: {"id":2}
+2024-10-14 17:56:27 - CREATE: {"text":"Todo3"}
+2024-10-14 17:56:27 - READ: [{"id":1,"text":"First to-do","completed":0},{"id":3,"text":"Test-To-Do","completed":0},{"id":6,"text":"Todo3","completed":0}]
+2024-10-14 18:00:26 - READ: [{"id":1,"text":"First to-do","completed":0},{"id":3,"text":"Test-To-Do","completed":0},{"id":6,"text":"Todo3","completed":0}]
+2024-10-14 18:00:35 - CREATE: {"text":"fdygsy"}
+2024-10-14 18:00:35 - READ: [{"id":1,"text":"First to-do","completed":0},{"id":3,"text":"Test-To-Do","completed":0},{"id":6,"text":"Todo3","completed":0},{"id":7,"text":"fdygsy","completed":0}]
+2024-10-14 18:00:42 - UPDATE: {"id":6}
+2024-10-14 18:00:42 - READ: [{"id":1,"text":"First to-do","completed":0},{"id":3,"text":"Test-To-Do","completed":0},{"id":6,"text":"Todo3","completed":1},{"id":7,"text":"fdygsy","completed":0}]
+2024-10-14 18:00:42 - UPDATE: {"id":7}
+2024-10-14 18:00:42 - READ: [{"id":1,"text":"First to-do","completed":0},{"id":3,"text":"Test-To-Do","completed":0},{"id":6,"text":"Todo3","completed":1},{"id":7,"text":"fdygsy","completed":1}]
+2024-10-14 18:00:43 - UPDATE: {"id":3}
+2024-10-14 18:00:43 - READ: [{"id":1,"text":"First to-do","completed":0},{"id":3,"text":"Test-To-Do","completed":1},{"id":6,"text":"Todo3","completed":1},{"id":7,"text":"fdygsy","completed":1}]
+2024-10-14 18:00:43 - UPDATE: {"id":1}
+2024-10-14 18:00:43 - READ: [{"id":1,"text":"First to-do","completed":1},{"id":3,"text":"Test-To-Do","completed":1},{"id":6,"text":"Todo3","completed":1},{"id":7,"text":"fdygsy","completed":1}]
+2024-10-14 18:00:45 - UPDATE: {"id":1}
+2024-10-14 18:00:45 - READ: [{"id":1,"text":"First to-do","completed":0},{"id":3,"text":"Test-To-Do","completed":1},{"id":6,"text":"Todo3","completed":1},{"id":7,"text":"fdygsy","completed":1}]
+2024-10-14 18:00:45 - UPDATE: {"id":3}
+2024-10-14 18:00:45 - READ: [{"id":1,"text":"First to-do","completed":0},{"id":3,"text":"Test-To-Do","completed":0},{"id":6,"text":"Todo3","completed":1},{"id":7,"text":"fdygsy","completed":1}]
+2024-10-14 18:00:46 - UPDATE: {"id":6}
+2024-10-14 18:00:46 - READ: [{"id":1,"text":"First to-do","completed":0},{"id":3,"text":"Test-To-Do","completed":0},{"id":6,"text":"Todo3","completed":0},{"id":7,"text":"fdygsy","completed":1}]
+2024-10-14 18:00:47 - UPDATE: {"id":7}
+2024-10-14 18:00:47 - READ: [{"id":1,"text":"First to-do","completed":0},{"id":3,"text":"Test-To-Do","completed":0},{"id":6,"text":"Todo3","completed":0},{"id":7,"text":"fdygsy","completed":0}]

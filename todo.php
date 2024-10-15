@@ -1,10 +1,19 @@
 <?php
    header('Content-Type: application/json');
 
-    //log-funktion
-    $todo_file = 'todo.json';
-    $todo_items = json_decode(file_get_contents($todo_file), true);
     
+    //$todo_file = 'todo.json';
+    //$todo_items = json_decode(file_get_contents($todo_file), true);
+    $host = 'localhost';
+    $db = 'todo_list';
+    $user = 'sf';
+    $pass = '08111981';
+    $charset = 'utf8mb4';
+    $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
+    $options = [
+        PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
+        PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
+    ];
 
    
     switch($_SERVER["REQUEST_METHOD"]){
