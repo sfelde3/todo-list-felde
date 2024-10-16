@@ -1,6 +1,6 @@
 <?php
 
-$host = '127.0.0.1';
+$host = 'localhost';
 $db = 'todo_list';
 $user = 'sf';
 $pass = '08111981';

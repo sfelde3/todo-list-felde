@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
+<!-- <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TODO-Liste</title>
@@ -10,13 +10,17 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
-</head>
+</head> -->
+<?php
+    require_once(__DIR__ . '/templatesetup.php');
+    echo $template->render('head.php', ['title' => 'To-Do Liste']);
+    ?>
 <body>
     <div class="container">
       <?php
-        require_once(__DIR__ . '/classes/templates.php');
+        //require_once(__DIR__ . '/classes/templates.php');
 
-        $template = new Template(__DIR__ . '/templates', []);
+        //$template = new Template(__DIR__ . '/templates', []);
         echo $template->render('nav.php');
       ?>
         </div>
